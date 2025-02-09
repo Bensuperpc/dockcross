@@ -6,7 +6,7 @@ LABEL maintainer="Matt McCormick matt@mmmccormick.com"
 # This is for 64-bit ARM Linux machine
 
 # Crosstool-ng version 2024-05-04
-ENV CT_VERSION crosstool-ng-1.26.0
+ENV CT_VERSION crosstool-ng-1.27.0
 
 #include "common.crosstool"
 
