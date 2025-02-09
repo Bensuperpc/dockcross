@@ -23,7 +23,7 @@ cd crosstool-ng
 Change git branch:
 
 ```bash
-git checkout crosstool-ng-1.25.0
+git checkout crosstool-ng-1.27.0
 ```
 
 Once in the **crosstool-ng** folder, you must first run the `bootstrap` script:

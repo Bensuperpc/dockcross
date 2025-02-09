@@ -67,7 +67,7 @@ if [[ -z "${PERL_HASH}" ]]; then
   exit 1
 fi
 
-# Hash from https://www.openssl.org/source/openssl-1.1.1l.tar.gz.sha256
+# Hash from https://www.openssl.org/source/openssl-1.1.1w.tar.gz.sha256
 OPENSSL_DOWNLOAD_URL=http://www.openssl.org/source/
 
 PERL_DOWNLOAD_URL=https://www.cpan.org/src/5.0
