@@ -7,12 +7,17 @@ if ! command -v git &> /dev/null; then
 	exit 1
 fi
 
+if [[ -z "${LIQUIDPROMT_VERSION}" ]]; then
+  echo >&2 'error: LIQUIDPROMT_VERSION env. variable must be set to a non-empty value'
+  exit 1
+fi
+
 cd /usr/share
 
 # Remove liquidprompt if exists
 rm -rf liquidprompt
 
-git clone "https://github.com/nojhan/liquidprompt.git" -b v_1.11
+git clone "https://github.com/nojhan/liquidprompt.git" --depth 1 -b "${LIQUIDPROMT_VERSION}" liquidprompt
 
 cat << EOF >> /root/.bashrc
 
